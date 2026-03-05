@@ -1,0 +1,18 @@
+{
+    "nodes": [
+        {"id": 0, "x": 0.0, "y": 0.0},
+        {"id": 1, "x": 2.0, "y": 0.0},
+        {"id": 2, "x": 4.0, "y": 0.0}
+    ],
+    "elements": [
+        {"id": 0, "node_start": 0, "node_end": 1, "E": 200e9, "I": 8.33e-6, "A": 0.01},
+        {"id": 1, "node_start": 1, "node_end": 2, "E": 200e9, "I": 8.33e-6, "A": 0.01}
+    ],
+    "boundary_conditions": [
+        {"node_id": 0, "type": "fixed"},
+        {"node_id": 2, "type": "roller"}
+    ],
+    "loads": [
+        {"node_id": 1, "force_y": -5000, "moment": 0}
+    ]
+}
